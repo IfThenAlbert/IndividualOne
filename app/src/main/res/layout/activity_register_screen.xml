@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="#232323"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This page is for you to register an account\nIf you already have an account, please go back and log in"
+                    android:textColor="#000000" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your first name"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/inp_new_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="first name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your last name"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/inp_new_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="last name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter a password"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/inp_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Before you register, please make sure to remember your username and password. Username is firstname and last name and lastly, your password is the password you typed in."
+                    android:textColor="#E91E63" />
+
+                <Button
+                    android:id="@+id/btn_add_me_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1E1C1C"
+                    android:onClick="onRegisterButtonTap"
+                    android:text="ADD ME UP!" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
